@@ -40,7 +40,7 @@ class GameManager extends Manager {
         $req = "INSERT INTO conducteur (prenom, nom) VALUES (:prenom, :nom)";
         $statement = $this->getBdd()->prepare($req);
         $statement->bindValue(":prenom",$title, PDO::PARAM_STR);
-        $statement->bindValue(":nom",$nbPlayers, PDO::PARAM_INT);
+        $statement->bindValue(":nom",$nbPlayers, PDO::PARAM_STR);
         $result = $statement->execute();
         $statement->closeCursor();
 
