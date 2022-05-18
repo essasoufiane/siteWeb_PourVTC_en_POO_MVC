@@ -1,0 +1,1 @@
+Pour installer la BDD il va surement falloir d'abord créer une BDD tu l'appelle 'vtc' ensuite dedans tu injecte le code SQL qui s'appelle 'vtc.sql' qui se trouve à la racine de ce fichier.
