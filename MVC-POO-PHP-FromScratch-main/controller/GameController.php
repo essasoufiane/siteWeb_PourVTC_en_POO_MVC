@@ -33,6 +33,12 @@ class GameController {
         $game = $this->gameManager->getGameById($id);
         require_once "view/edit.game.view.php";
     }
+    public function editGameValidation(){
+        // echo $id;
+        $this->gameManager->editGameDB($_POST['id'],$_POST['prenom'],$_POST['nom']);
+        header('Location:' . URL . "games" );
+
+    }
 
 }
 
