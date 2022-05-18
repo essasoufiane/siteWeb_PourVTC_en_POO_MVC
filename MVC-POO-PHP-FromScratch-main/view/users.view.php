@@ -34,7 +34,7 @@ ob_start();
   </tbody>
 </table>
 
-<a class="btn btn-success w-25 d-block m-auto" href="">Ajouter un utilisateur</a>
+<a class="btn btn-success w-25 d-block m-auto" href="<?= URL ?>car/addc">Ajouter un utilisateur</a>
 
 <?php
 

@@ -26,6 +26,21 @@ if(empty($_GET['page'])){
                 echo "Supprimer un jeu";
             }
         break;
+        case 'car': 
+            if(empty($url[1])){
+                $gameController->displayCar();
+            }elseif($url[1] == "addc"){
+                $gameController->newCarForm();
+            }elseif($url[1] == "cvalid")
+            {
+                $gameController->newCarValidation();
+            }
+            // elseif($url[1] == "edit"){
+            //     $gameController->editGameForm($url[2]); 
+            // }elseif($url[1] == "delete"){
+            //     echo "Supprimer un jeu";
+            // }
+        break;
 
         
         case 'users': require_once "view/users.view.php";

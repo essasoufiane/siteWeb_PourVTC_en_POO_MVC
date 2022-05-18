@@ -15,7 +15,7 @@
 <?php
 
 $content =ob_get_clean();
-$title = "Ajouter un jeu";
+$title = "Inscrivez vous";
 require_once "base.html.php";
 
 ?>
