@@ -10,7 +10,7 @@
     <input type="text" name="nom" value="<?= $game->getNbPlayers()?>" class="form-control" id="nbPlayers">
   </div>
   <input type="hidden" name="id_conducteur" value="<?= $game->getId()?>">
-  <button class="btn btn-success" value="<?= $game->getId()?>" type="submit">S'inscrire</button>
+  <button class="btn btn-success" value="<?= $game->getId()?>" type="submit">Editer</button>
 </form>
 
 

@@ -27,13 +27,9 @@ class carController {
    
     }
 
-    public function editCarForm($id){
-            echo $id;
-    }
+    public function editCarForm($id_vehicule){
+        $user = $this->UserManager->getUserById($id_vehicule);
+        require_once "view/edit.car.view.php";
+        }
 
 }
-
-
-  
-
-

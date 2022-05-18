@@ -26,7 +26,7 @@ ob_start();
           <td><?= $user->getLastname() ?></td>
           <td><?= $user->getCouleur() ?></td>
           <td><?= $user->getImmatriculation() ?></td>
-          <td><a href=""><i class="fa-solid fa-edit"></i></a></td>
+          <td><a href="<?= URL ?>car/edit/<?= $user->getId() ?>"><i class="fa-solid fa-edit"></i></a></td>
           <td><a href=""><i class="fa-solid fa-trash"></i></a></td>
         </tr>
      <?php endforeach; ?>   

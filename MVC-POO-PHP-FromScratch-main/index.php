@@ -39,9 +39,10 @@ if(empty($_GET['page'])){
             {
                 $carController->newCarValidation();
             }
-            // elseif($url[1] == "edit"){
-            //     $gameController->editGameForm($url[2]); 
-            // }elseif($url[1] == "delete"){
+            elseif($url[1] == "edit"){
+                $carController->editCarForm($url[2]); 
+            }
+            // elseif($url[1] == "delete"){
             //     echo "Supprimer un jeu";
             // }
         break;

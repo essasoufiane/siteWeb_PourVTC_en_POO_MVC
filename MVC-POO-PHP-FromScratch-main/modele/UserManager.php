@@ -13,6 +13,13 @@ class UserManager extends Manager {
     public function getUsers(){
         return $this->users;
     }
+    public function getUserById($id_vehicule){
+        foreach($this->users as $user) {
+            if ($id_vehicule == $user->getId()) {
+                return $user;
+            }
+        }
+    }
 
     public function loadUsers(){
         $req = $this->getBdd()->prepare("SELECT * FROM vehicule");
