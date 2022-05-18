@@ -27,7 +27,7 @@ if(empty($_GET['page'])){
                 $gameController->editGameValidation();
                 // var_dump($_POST);
             }elseif($url[1] == "delete"){
-                echo "Supprimer un jeu";
+                $gameController->deleteGameValidation($url[2]);
             }
         break;
         case 'car': 
