@@ -9,6 +9,7 @@
     <label for="nbPlayers">Nom</label>
     <input type="text" name="nom" value="<?= $game->getNbPlayers()?>" class="form-control" id="nbPlayers">
   </div>
+  <input type="hidden" name="id_conducteur" value="<?= $game->getId()?>">
   <button class="btn btn-success" value="<?= $game->getId()?>" type="submit">S'inscrire</button>
 </form>
 
@@ -18,6 +19,4 @@
 $content =ob_get_clean();
 $title = "Edition de: " . $game->getTitle();
 require_once "base.html.php";
-require_once "controller/GameController.php";
-
 ?>

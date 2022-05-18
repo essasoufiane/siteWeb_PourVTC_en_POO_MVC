@@ -27,16 +27,13 @@ class GameController {
     }
     
     public function editGameForm($id){
-        // echo $id;
-        // $this->gameManager->editGameDB($_POST['id'],$_POST['prenom'],$_POST['nom']);
-        // header('Location:' . URL . "games" );
         $game = $this->gameManager->getGameById($id);
         require_once "view/edit.game.view.php";
     }
     public function editGameValidation(){
         // echo $id;
-        $this->gameManager->editGameDB($_POST['id'],$_POST['prenom'],$_POST['nom']);
-        header('Location:' . URL . "games" );
+        $this->gameManager->editGameDB($_POST['id_conducteur'],$_POST['prenom'],$_POST['nom']);
+        header('Location:' . URL . 'games' );
 
     }
 

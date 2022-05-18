@@ -24,7 +24,8 @@ if(empty($_GET['page'])){
             }elseif($url[1] == "edit"){
                 $gameController->editGameForm($url[2]); 
             }elseif($url[1] == "editvalid"){
-                echo "good"; 
+                $gameController->editGameValidation();
+                // var_dump($_POST);
             }elseif($url[1] == "delete"){
                 echo "Supprimer un jeu";
             }

@@ -54,7 +54,7 @@ class GameManager extends Manager {
     }
     public function editGameDB($id,$title,$nbPlayers){
 
-        $req = "UPDATE conducteur SET title = :prenom, nbPlayers = :nom WHERE id = :id";
+        $req = "UPDATE conducteur SET prenom = :prenom, nom = :nom WHERE id_conducteur = :id";
         $statement = $this->getBdd()->prepare($req);
         $statement->bindValue(":id",$id, PDO::PARAM_INT);
         $statement->bindValue(":prenom",$title, PDO::PARAM_STR);
