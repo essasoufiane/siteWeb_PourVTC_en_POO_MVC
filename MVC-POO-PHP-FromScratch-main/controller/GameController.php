@@ -23,11 +23,15 @@ class GameController {
     //   $this->gameManager->newGameDB($_POST['title'],$_POST['nbPlayers']);
       $this->gameManager->newGameDB($_POST['prenom'],$_POST['nom']);
       header('Location:' . URL . "games" );
-   
+      
     }
-
+    
     public function editGameForm($id){
-            echo $id;
+        // echo $id;
+        // $this->gameManager->editGameDB($_POST['id'],$_POST['prenom'],$_POST['nom']);
+        // header('Location:' . URL . "games" );
+        $game = $this->gameManager->getGameById($id);
+        require_once "view/edit.game.view.php";
     }
 
 }
