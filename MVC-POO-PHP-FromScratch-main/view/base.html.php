@@ -23,8 +23,8 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="<?= URL ?>accueil">Accueil</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?= URL ?>games">Jeux</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="<?= URL ?>games">Conducteur</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="<?= URL ?>users">Utilisateurs</a>

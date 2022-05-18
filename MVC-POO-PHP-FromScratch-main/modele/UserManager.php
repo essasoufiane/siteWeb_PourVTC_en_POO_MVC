@@ -15,13 +15,13 @@ class UserManager extends Manager {
     }
 
     public function loadUsers(){
-        $req = $this->getBdd()->prepare("SELECT * FROM userA");
+        $req = $this->getBdd()->prepare("SELECT * FROM vehicule");
         $req->execute();
         $myUsers = $req->fetchAll(PDO::FETCH_ASSOC);
         $req->closeCursor();
 
         foreach($myUsers as $user){
-            $u = new User($user['id'],$user['firstname'],$user['lastname']);
+            $u = new User($user['id_vehicule'],$user['marque'],$user['modele'],$user['couleur'],$user['immatriculation']);
             $this->addUser($u);
         }
 
