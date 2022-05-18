@@ -27,7 +27,7 @@
                     <a class="nav-link" href="<?= URL ?>games">Conducteur</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="<?= URL ?>users">Utilisateurs</a>
+                    <a class="nav-link" href="<?= URL ?>users">Véhicule</a>
                 </li>
             </ul>
         </div>

@@ -5,11 +5,15 @@ class User {
     private $id;
     private $firstname;
     private $lastname;
+    private $couleur;
+    private $immatriculation;
 
-    public function __construct($id,$firstname,$lastname){
+    public function __construct($id,$firstname,$lastname,$couleur,$immatriculation){
         $this->id = $id;
         $this->firstname = $firstname;
         $this->lastname = $lastname;
+        $this->couleur = $couleur;
+        $this->immatriculation = $immatriculation;
     }
 
     /**
@@ -68,6 +72,46 @@ class User {
     public function setId($id)
     {
         $this->id = $id;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of couleur
+     */ 
+    public function getCouleur()
+    {
+        return $this->couleur;
+    }
+
+    /**
+     * Set the value of couleur
+     *
+     * @return  self
+     */ 
+    public function setCouleur($couleur)
+    {
+        $this->couleur = $couleur;
+
+        return $this;
+    }
+
+    /**
+     * Get the value of immatriculation
+     */ 
+    public function getImmatriculation()
+    {
+        return $this->immatriculation;
+    }
+
+    /**
+     * Set the value of immatriculation
+     *
+     * @return  self
+     */ 
+    public function setImmatriculation($immatriculation)
+    {
+        $this->immatriculation = $immatriculation;
 
         return $this;
     }
