@@ -3,8 +3,8 @@
 <table class="table  table-hover text-center shadow">
   <thead class="bg-secondary text-white">
     <tr>
-      <th scope="col">Titre</th>
-      <th scope="col">Nombres de joueurs</th>
+      <th scope="col">Prénom</th>
+      <th scope="col">Nom</th>
       <th scope="col" colspan="2">Actions</th>
     </tr>
   </thead>
@@ -22,12 +22,12 @@
   </tbody>
 </table>
 
-<a class="btn btn-success w-25 d-block m-auto" href="<?= URL ?>games/add">Ajouter un jeu</a>
+<a class="btn btn-success w-25 d-block m-auto" href="<?= URL ?>games/add">Inscrivez-vous !</a>
 
 <?php
 
 $content =ob_get_clean();
-$title = "Liste de jeux";
+$title = "Conducteur sur la platforme";
 require_once "base.html.php";
 
 ?>
