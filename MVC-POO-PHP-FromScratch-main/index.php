@@ -3,8 +3,9 @@ define("URL" , str_replace("index.php","",(isset($_SERVER['HTTPS']) ? "https" : 
 "://".$_SERVER['HTTP_HOST'] . $_SERVER['PHP_SELF'] ));
 
 require_once "controller/GameController.php";
+require_once "controller/carController.php";
 $gameController = new GameController();
-
+$carController = new carController();
 if(empty($_GET['page'])){
     require_once "view/home.view.php";
 }else{
@@ -28,12 +29,12 @@ if(empty($_GET['page'])){
         break;
         case 'car': 
             if(empty($url[1])){
-                $gameController->displayCar();
+                $carController->displayCar();
             }elseif($url[1] == "addc"){
-                $gameController->newCarForm();
+                $carController->newCarForm();
             }elseif($url[1] == "cvalid")
             {
-                $gameController->newCarValidation();
+                $carController->newCarValidation();
             }
             // elseif($url[1] == "edit"){
             //     $gameController->editGameForm($url[2]); 

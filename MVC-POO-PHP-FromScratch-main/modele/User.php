@@ -2,16 +2,16 @@
 
 class User {
 
-    private $id;
-    private $firstname;
-    private $lastname;
+    private $id_vehicule;
+    private $Marque;
+    private $Modele;
     private $couleur;
     private $immatriculation;
 
-    public function __construct($id,$firstname,$lastname,$couleur,$immatriculation){
-        $this->id = $id;
-        $this->firstname = $firstname;
-        $this->lastname = $lastname;
+    public function __construct($id_vehicule,$Marque,$Modele,$couleur,$immatriculation){
+        $this->id_vehicule = $id_vehicule;
+        $this->Marque = $Marque;
+        $this->Modele = $Modele;
         $this->couleur = $couleur;
         $this->immatriculation = $immatriculation;
     }
@@ -21,7 +21,7 @@ class User {
      */ 
     public function getFirstname()
     {
-        return $this->firstname;
+        return $this->Marque;
     }
 
     /**
@@ -29,9 +29,9 @@ class User {
      *
      * @return  self
      */ 
-    public function setFirstname($firstname)
+    public function setFirstname($Marque)
     {
-        $this->firstname = $firstname;
+        $this->Marque = $Marque;
 
         return $this;
     }
@@ -41,7 +41,7 @@ class User {
      */ 
     public function getLastname()
     {
-        return $this->lastname;
+        return $this->Modele;
     }
 
     /**
@@ -49,9 +49,9 @@ class User {
      *
      * @return  self
      */ 
-    public function setLastname($lastname)
+    public function setLastname($Modele)
     {
-        $this->lastname = $lastname;
+        $this->Modele = $Modele;
 
         return $this;
     }
@@ -61,7 +61,7 @@ class User {
      */ 
     public function getId()
     {
-        return $this->id;
+        return $this->id_vehicule;
     }
 
     /**
@@ -69,9 +69,9 @@ class User {
      *
      * @return  self
      */ 
-    public function setId($id)
+    public function setId($id_vehicule)
     {
-        $this->id = $id;
+        $this->id_vehicule = $id_vehicule;
 
         return $this;
     }

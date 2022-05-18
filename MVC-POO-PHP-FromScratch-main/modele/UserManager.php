@@ -40,7 +40,7 @@ class UserManager extends Manager {
         $statement->closeCursor();
 
         if ($result) {
-            $g = new Game($this->getBdd()->lastInsertId(),$id_vehicule,$Marque,$Modele,$couleur,$immatriculation);
+            $g = new User($this->getBdd()->lastInsertId(),$id_vehicule,$Marque,$Modele,$couleur,$immatriculation);
             $this->addUser($g);
         }
         
