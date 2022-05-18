@@ -2,14 +2,14 @@
 
 <form method="POST" action="<?= URL ?>games/gvalid">
   <div class="form-group">
-    <label for="title">Titre du jeu</label>
-    <input type="text" name="title" class="form-control" id="title">
+    <label for="title">Prénom</label>
+    <input type="text" name="prenom" class="form-control" id="title">
   </div>
   <div class="form-group">
-    <label for="nbPlayers">Nombres de joueurs</label>
-    <input type="text" name="nbPlayers" class="form-control" id="nbPlayers">
+    <label for="nbPlayers">Nom</label>
+    <input type="text" name="nom" class="form-control" id="nbPlayers">
   </div>
-  <button class="btn btn-success" type="submit">Ajouter un jeu</button>
+  <button class="btn btn-success" type="submit">S'inscrire</button>
 </form>
 
 <?php

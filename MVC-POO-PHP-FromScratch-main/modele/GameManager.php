@@ -37,7 +37,7 @@ class GameManager extends Manager {
 
     public function newGameDB($title,$nbPlayers){
         // $req = "INSERT INTO games (title, nb_players) VALUES (:title, :nbPlayers)";
-        $req = "INSERT INTO games (prenom, nom) VALUES (:prenom, :nom)";
+        $req = "INSERT INTO conducteur (prenom, nom) VALUES (:prenom, :nom)";
         $statement = $this->getBdd()->prepare($req);
         $statement->bindValue(":prenom",$title, PDO::PARAM_STR);
         $statement->bindValue(":nom",$nbPlayers, PDO::PARAM_INT);
